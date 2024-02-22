@@ -1,0 +1,14 @@
+﻿@using ASP.NET_Intro.Models
+@model List<Product>
+
+<h1>Product page</h1>
+
+
+@*<h4>Name: @TempData["Name"]</h4>*@
+
+<ul>
+    @foreach (var product in Model)
+    {
+        <li>@product.Id - @product.Name - @product.Price - @product.Description</li>
+    }
+</ul>
